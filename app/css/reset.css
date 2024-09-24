@@ -1,0 +1,43 @@
+/* CSS Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    font-size: 100%;
+    font-family: Arial, sans-serif; /* Defina a fonte base */
+  }
+  
+  body {
+    line-height: 1.5; /* Define uma altura de linha confortável */
+    background: none; /* Remove qualquer background padrão */
+    color: inherit; /* Herda a cor padrão */
+  }
+  
+  ul, ol {
+    list-style: none; /* Remove as bolinhas e números das listas */
+  }
+  
+  a {
+    text-decoration: none; /* Remove sublinhado padrão dos links */
+    color: inherit; /* Links herdam a cor do texto */
+  }
+  
+  button, input {
+    border: none; /* Remove bordas padrão de botões e inputs */
+    background: none; /* Remove o background padrão */
+    font: inherit; /* Faz com que os inputs e botões usem a mesma fonte que o restante do site */
+  }
+  
+  img {
+    max-width: 100%; /* Faz com que imagens não saiam da área de conteúdo */
+    height: auto;
+  }
+  
+  table {
+    border-collapse: collapse; /* Remove espaçamentos entre bordas de tabelas */
+  }
+  

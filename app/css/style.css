@@ -1,0 +1,150 @@
+/* Importa css reset */
+@import "./reset.css";
+
+/* Estilização do container principal */
+.container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+/* Estilização do texto principal */
+.main-text {
+  font-size: 6.750em;
+  font-weight: 700;
+  line-height: 1.5;  
+  text-align: center;
+}
+
+.special-text {
+  color: #10aaf2;
+}
+
+.arrow {
+  position: absolute;
+}
+
+.arrow img {
+  color: #10aaf2;
+}
+
+#arrow1 {
+  bottom: 125px;
+  left: 440px;
+  transform: scaleX(-1);
+}
+
+#arrow2 {
+  bottom: 125px;
+  right: 440px;
+}
+
+/* Estilização do Magic Button */
+.magic-button {
+  justify-self: center;
+  padding: 30px 60px;
+  background: linear-gradient(45deg, #0084ff, #10aaf2);
+  border-radius: 5px;
+  color: #f0f0f0;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.magic-button:hover {
+  margin-bottom: 20px;
+}
+
+/* Estilização do Theme Swith */
+.toggle-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #10aaf2;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+/* Estilos para o tema claro */
+.light-mode {
+  background-color: #f0f0f0;
+  color: #1e1e1e;
+}
+
+/* Estilos para o tema escuro */
+.dark-mode {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+/* Audio controls */
+.control-button {
+  width: 40px; /* Largura do botão */
+  height: 40px; /* Altura do botão */
+  border-radius: 50%; /* Botão circular */
+  background-color: rgba(200, 200, 200, 0.8); /* Cor de fundo neutra */
+  border: none; /* Remove borda */
+  cursor: pointer; /* Muda o cursor para indicar interatividade */
+  outline: none; /* Remove o contorno padrão */
+  position: absolute; /* Permite posicionar o botão */
+  bottom: 20px; /* Distância do fundo */
+  right: 20px; /* Distância da direita */
+  display: flex;
+  justify-content: center; /* Centraliza o ícone horizontalmente */
+  align-items: center; /* Centraliza o ícone verticalmente */
+  transition: background-color 0.3s; /* Transição suave */
+}
+
+.control-button:hover {
+  background-color: rgba(150, 150, 150, 0.8); /* Cor ao passar o mouse */
+}
+
+.icon {
+  width: 24px; /* Largura do ícone */
+  height: 24px; /* Altura do ícone */
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Button</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="light-mode">
+    <main class="container">
+        <p class="main-text">Click the <span class="special-text">Button</span>. <br> it only costs $0.50!</p>
+
+        <img src="./assets/Seta.svg" alt="Arrow 1" class="arrow" id="arrow1">
+        <img src="./assets/Seta.svg" alt="Arrow 2" class="arrow" id="arrow2">
+        
+        <button class="magic-button">Magic Button</button>
+        
+        <div class="toggle-container">
+            <label class="switch">
+                <input type="checkbox" id="theme-toggle">
+                <span class="slider round"></span>
+            </label>
+            <script src="./script.js"></script>
+        </div>
+
+        <audio autoplay loop id="audio" src="./assets/StockTune-Tiny Tunes Adventure_1727214653.mp3"></audio>
+        <button id="play-pause" class="control-button">
+            <img src="./assets/play_arrow_24.svg" alt="Play" class="icon">
+        </button>
+    </main>
+</body>
+</html>
